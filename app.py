@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000", "https://backend-test-deploy-lm9h.onrender.com/"])
+CORS(app, origins=["http://localhost:3000", "https://fontend-versla-test.onrender.com"])
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 
 from models import db
